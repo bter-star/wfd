@@ -19,7 +19,7 @@ const Home = () => {
           muted
           className="fixed right-0 top-0 w-full max-w-full h-full object-cover"
         >
-          <source src={"/fire_video.mp4"} type="video/mp4" />
+          <source src={"/wfd/fire_video.mp4"} type="video/mp4" />
         </video>
         <div className="relative w-1/2 my-20">
           <h1 className="mt-4 flex flex-col text-6xl font-extrabold text-white flex-wrap">
