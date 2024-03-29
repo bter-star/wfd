@@ -6,16 +6,18 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import React from "react";
+import JoinButton from "../components/JoinButton";
 
 const Home = () => {
   return (
     <div className="flex flex-col text-left">
+      <JoinButton />
       <div className="relative h-screen">
         <video
           autoPlay
           loop
           muted
-          className="fixed right-0 w-auto max-w-full h-full object-cover"
+          className="fixed right-0 top-0 w-full max-w-full h-full object-cover"
         >
           <source src={"/fire_video.mp4"} type="video/mp4" />
         </video>
@@ -92,7 +94,6 @@ const Home = () => {
         </div>
       </div>
     </div>
-    
   );
 };
 
