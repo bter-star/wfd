@@ -21,7 +21,7 @@ function App() {
       <Router>
         <Navigation />
         <Routes>
-          <Route path="/" element={<PageContainer content={<Home />} />} />
+          <Route path="*" element={<PageContainer content={<Home />} />} />
           <Route
             path="/about"
             element={<PageContainer content={<About />} />}
