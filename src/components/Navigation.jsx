@@ -120,7 +120,7 @@ export default function Navigation() {
                       <span className="sr-only">Woodmere Fire Department</span>
                       <img
                         className="h-12 w-auto"
-                        src="/DepartmentPatchNB.png"
+                        src="./wfd/DepartmentPatchNB.png"
                         alt=""
                       />
                       <span className=" text-white font-extrabold text-lg ml-2 flex-wrap">
@@ -178,7 +178,7 @@ export default function Navigation() {
                   <a href="#" className="lg:hidden">
                     <span className="sr-only">Woodmere Fire Department</span>
                     <img
-                      src="/DepartmentPatchNB.png"
+                      src="./wfd/DepartmentPatchNB.png"
                       alt=""
                       className="h-8 w-auto"
                     />
