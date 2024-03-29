@@ -6,13 +6,13 @@ import {
   UserGroupIcon,
 } from "@heroicons/react/24/outline";
 import React from "react";
-import JoinButton from "../components/JoinButton";
+import FloatingButtons from "../components/FloatButtons";
 
 const Home = () => {
   return (
     <div className="flex flex-col text-left">
-      <JoinButton />
-      <div className="relative h-screen">
+      <FloatingButtons />
+      <div className="relative h-screen mx-8">
         <video
           autoPlay
           loop
@@ -35,18 +35,18 @@ const Home = () => {
           <button className="transition-all duration-500 ease-in-out rounded-full ring-2 bg-tertiary-200 ring-tertiary-200 text-white w-fit px-14 py-1.5 text-2xl font-bold hover:bg-transparent">
             JOIN
           </button>
-          <button className="transition-all duration-500 ease-in-out rounded-full bg-transparent ring-2 ring-white text-white w-fit px-5 py-1.5 text-2xl font-light hover:text-accent-100 hover:text-black hover:bg-white">
+          <button className="transition-all duration-500 ease-in-out rounded-full bg-transparent ring-2 ring-white text-white w-fit px-5 py-1.5 text-2xl font-light hover:text-black hover:bg-white">
             REQUEST INFO
           </button>
         </div>
       </div>
-      <div className=" flex flex-col sm:flex-row justify-evenly gap-6 bg-secondary-400 opacity-90 border-white border rounded-xl p-6 ">
+      <div className="mx-6 sm:mx-8 flex flex-col sm:flex-row justify-between gap-6 bg-secondary-400 opacity-90 border-white border rounded-sm p-6 ">
         <div className="text-white font-extrabold flex flex-col">
           <div className="flex">
             <PlusIcon className="h-6 w-6 mr-2" />
             COMMUNITY SERVICE
           </div>
-          <p className="ml-8 font-normal text-left max-w-56">
+          <p className="ml-8 font-normal text-left ">
             Give back to your local community by joining the Woodmere Fire.
           </p>
         </div>
@@ -54,7 +54,7 @@ const Home = () => {
           <div className="flex">
             <AcademicCapIcon className="h-6 w-6 mr-2" /> FREE TRAINING
           </div>
-          <p className="ml-8 font-normal text-left max-w-56">
+          <p className="ml-8 font-normal text-left ">
             Get trained by world class instructors every Sunday and Thursday.
           </p>
         </div>
@@ -63,14 +63,14 @@ const Home = () => {
             <UserGroupIcon className="h-6 w-6 mr-2" />
             CAMARADERIE
           </div>
-          <p className="ml-8 font-normal text-left max-w-56">
+          <p className="ml-8 font-normal text-left ">
             Join a team of dedicated volunteers who are always there for you and
             the community.
           </p>
         </div>
       </div>
 
-      <div className="relative flex sm:flex-row flex-col w-full justify-between gap-4 py-8 mt-10 h-auto bg-black">
+      <div className="relative flex sm:flex-row flex-col w-full justify-between gap-4 py-8 px-6 mt-10 h-auto bg-black">
         <div className="bg-white flex flex-col w-full items-center justify-center p-12">
           <FireIcon className="h-24 w-24" />
           <div className="font-bold">EMS</div>
