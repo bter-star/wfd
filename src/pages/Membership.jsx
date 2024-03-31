@@ -15,7 +15,7 @@ const Membership = () => {
           playsInline
           className="absolute w-full h-2/3 object-cover"
         >
-          <source src={"/firefighter.mp4"} type="video/mp4" />
+          <source src={"/responding.mp4"} type="video/mp4" />
         </video>
         <span className="relative flex sm:w-2/3 w-full justify-center border-4  sm:py-6 font-bold">
           MEMBERSHIP
