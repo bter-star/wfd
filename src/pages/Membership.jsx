@@ -12,6 +12,7 @@ const Membership = () => {
           autoPlay
           loop
           muted
+          playsInline
           className="absolute w-full h-2/3 object-cover"
         >
           <source src={"/firefighter.mp4"} type="video/mp4" />
