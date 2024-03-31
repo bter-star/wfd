@@ -17,6 +17,7 @@ const Home = () => {
           autoPlay
           loop
           muted
+          playsInline
           className="fixed right-0 top-0 w-full max-w-full h-full object-cover"
         >
           <source src={"/fire_video.mp4"} type="video/mp4" />
