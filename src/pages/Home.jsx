@@ -23,7 +23,7 @@ const Home = () => {
           <source src={"/fire_video.mp4"} type="video/mp4" />
         </video>
         <div className="relative w-1/2 my-20">
-          <h1 className="mt-4 flex flex-col text-6xl font-extrabold text-white flex-wrap">
+          <h1 className="mt-4 flex flex-col text-6xl font-extrabold text-white">
             THE PRIDE
             <div className="text-tertiary-200 leading-none">OF</div>
             WOODMERE
