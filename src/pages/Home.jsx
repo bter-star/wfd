@@ -25,18 +25,18 @@ const Home = () => {
         <div className="relative w-1/2 my-20">
           <h1 className="mt-4 flex flex-col text-6xl font-extrabold text-white flex-wrap">
             THE PRIDE
-            <div className="text-tertiary-200">OF</div>
+            <div className="text-tertiary-200 leading-none">OF</div>
             WOODMERE
           </h1>
           <p className="text-white text-2xl flex tracking-wider font-light pt-2">
             WOODMERE FIRE DEPARTMENT
           </p>
         </div>
-        <div className="relative flex gap-4">
-          <button className="transition-all duration-500 ease-in-out rounded-full ring-2 bg-tertiary-200 ring-tertiary-200 text-white w-fit px-14 py-1.5 text-2xl font-bold hover:bg-transparent">
+        <div className="relative flex items-center sm:flex-row flex-col gap-4">
+          <button className="w-full sm:w-fit transition-all duration-500 ease-in-out rounded-full ring-2 bg-tertiary-200 ring-tertiary-200 text-white  px-14 py-2.5 text-2xl font-bold hover:bg-transparent">
             JOIN
           </button>
-          <button className="transition-all duration-500 ease-in-out rounded-full bg-transparent ring-2 ring-white text-white w-fit px-5 py-1.5 text-2xl font-light hover:text-black hover:bg-white">
+          <button className="w-full sm:w-fit transition-all duration-500 ease-in-out rounded-full bg-transparent ring-2 ring-white text-white  px-5 py-2.5 text-2xl font-light hover:text-black hover:bg-white">
             REQUEST INFO
           </button>
         </div>
@@ -71,7 +71,7 @@ const Home = () => {
         </div>
       </div>
 
-      <div className="relative flex sm:flex-row flex-col w-full justify-between gap-4 py-8 px-6 mt-10 h-auto bg-black">
+      <div className="relative flex md:flex-row flex-col w-full justify-between gap-4 py-8 px-6 mt-10 h-auto bg-black">
         <div className="bg-white flex flex-col w-full items-center justify-center p-12">
           <FireIcon className="h-24 w-24" />
           <div className="font-bold">EMS</div>

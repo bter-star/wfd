@@ -31,31 +31,31 @@ export default function Navigation() {
   const currentPath = location.pathname;
 
   return (
-    <div className="bg-black opacity-95 sticky top-0 z-50">
+    <div className="bg-black opacity-95 sticky top-0 z-40">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
           <Transition.Child
             as={Fragment}
-            enter="transition-opacity ease-linear duration-300"
-            enterFrom="opacity-0"
-            enterTo="opacity-100"
-            leave="transition-opacity ease-linear duration-300"
-            leaveFrom="opacity-100"
-            leaveTo="opacity-0"
+            enter="transition ease-in-out duration-300 transform"
+            enterFrom="translate-x-full"
+            enterTo="translate-x-0"
+            leave="transition ease-in-out duration-300 transform"
+            leaveFrom="translate-x-0"
+            leaveTo="translate-x-full"
           >
             <div className="fixed inset-0 bg-black bg-opacity-25" />
           </Transition.Child>
 
-          <div className="fixed inset-0 z-40 flex">
+          <div className="fixed inset-0 z-40 flex justify-end">
             <Transition.Child
               as={Fragment}
               enter="transition ease-in-out duration-300 transform"
-              enterFrom="-translate-x-full"
+              enterFrom="translate-x-full"
               enterTo="translate-x-0"
               leave="transition ease-in-out duration-300 transform"
               leaveFrom="translate-x-0"
-              leaveTo="-translate-x-full"
+              leaveTo="translate-x-full"
             >
               <Dialog.Panel className="relative flex w-full max-w-xs flex-col overflow-y-auto bg-black pb-12 shadow-xl border-b border-gray-800">
                 <div className="flex px-4 pb-2 pt-5">
@@ -110,22 +110,30 @@ export default function Navigation() {
       <header className="relative">
         <nav aria-label="Top">
           {/* Navigation */}
-          <div className="bg-transparent">
-            <div className="mx-auto  px-4 sm:px-6 lg:px-8 border-b border-gray-800">
+          <div className="bg-transparent ">
+            <div className="px-4 sm:px-6 lg:px-8 border-b border-gray-800">
               <div className="">
-                <div className="flex h-16 items-center justify-between">
+                <div className="flex h-24 items-center justify-between w-full">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
-                    <a href="#" className="flex items-center">
+                    <a href="#" className="flex items-center justify-start">
                       <span className="sr-only">Woodmere Fire Department</span>
                       <img
-                        className="h-12 w-auto"
+                        className="h-14 w-auto"
                         src="/DepartmentPatchNB.png"
                         alt=""
                       />
-                      <span className=" text-white font-extrabold text-lg ml-2 flex-wrap">
-                        WOODMERE FIRE DEPT.
-                      </span>
+                      <div className="flex flex-col ml-2">
+                        <span className=" text-white font-extrabold text-xl leading-none ">
+                          WOODMERE
+                        </span>
+                        <span className=" text-tertiary-200 font-extrabold text-xl  leading-none">
+                          FIRE
+                        </span>
+                        <span className=" text-secondary-100 font-extrabold text-xl  leading-none">
+                          DEPT.
+                        </span>
+                      </div>
                     </a>
                   </div>
 
@@ -150,8 +158,29 @@ export default function Navigation() {
                     </Popover.Group>
                   </div>
 
+                  {/* Logo (lg-) */}
+                  <div className="lg:hidden flex">
+                    <span className="sr-only">Woodmere Fire Department</span>
+                    <img
+                      src="/DepartmentPatchNB.png"
+                      alt=""
+                      className="h-14 w-auto"
+                    />
+                    <div className="flex flex-col ml-2">
+                      <span className=" text-white font-extrabold text-xl leading-none ">
+                        WOODMERE
+                      </span>
+                      <span className=" text-tertiary-200 font-extrabold text-xl  leading-none">
+                        FIRE
+                      </span>
+                      <span className=" text-secondary-100 font-extrabold text-xl  leading-none">
+                        DEPT.
+                      </span>
+                    </div>
+                  </div>
+
                   {/* Mobile menu and search (lg-) */}
-                  <div className="flex flex-1 items-center lg:hidden">
+                  <div className="lg:hidden">
                     <button
                       type="button"
                       className="-ml-2 rounded-md bg-black p-2 text-white"
@@ -160,29 +189,7 @@ export default function Navigation() {
                       <span className="sr-only">Open menu</span>
                       <Bars3Icon className="h-6 w-6" aria-hidden="true" />
                     </button>
-
-                    {/* Search */}
-                    <a
-                      href="#"
-                      className="ml-2 p-2 text-gray-400 hover:text-gray-500"
-                    >
-                      <span className="sr-only">Search</span>
-                      <MagnifyingGlassIcon
-                        className="h-6 w-6"
-                        aria-hidden="true"
-                      />
-                    </a>
                   </div>
-
-                  {/* Logo (lg-) */}
-                  <a href="#" className="lg:hidden">
-                    <span className="sr-only">Woodmere Fire Department</span>
-                    <img
-                      src="/DepartmentPatchNB.png"
-                      alt=""
-                      className="h-8 w-auto"
-                    />
-                  </a>
                 </div>
               </div>
             </div>
