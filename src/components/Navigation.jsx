@@ -116,22 +116,22 @@ export default function Navigation() {
                 <div className="flex h-24 items-center justify-between w-full">
                   {/* Logo (lg+) */}
                   <div className="hidden lg:flex lg:items-center">
-                    <a href="#" className="flex items-center justify-start">
+                    <a href="/" className="flex items-center justify-start">
                       <span className="sr-only">Woodmere Fire Department</span>
                       <img
-                        className="h-14 w-auto"
+                        className="h-16 w-auto mx-4"
                         src="/DepartmentPatchNB.png"
                         alt=""
                       />
-                      <div className="flex flex-col ml-2">
-                        <span className=" text-white font-extrabold text-xl leading-none ">
+                      <div className="flex flex-col ">
+                        <span className=" text-white font-extrabold text-2xl leading-none ">
                           WOODMERE
                         </span>
-                        <span className=" text-tertiary-200 font-extrabold text-xl  leading-none">
+                        <span className=" text-tertiary-200 font-extrabold text-2xl  leading-none">
                           FIRE
                         </span>
-                        <span className=" text-secondary-100 font-extrabold text-xl  leading-none">
-                          DEPT.
+                        <span className=" text-white font-extrabold text-2xl  leading-none">
+                          DEPARTMENT
                         </span>
                       </div>
                     </a>
@@ -145,7 +145,7 @@ export default function Navigation() {
                           <Link
                             key={page.name}
                             to={page.href}
-                            className={`flex items-center text-sm font-medium  hover:text-tertiary-200 hover:border-tertiary-200 border-b-4  ${
+                            className={`flex items-center text-md font-medium  hover:text-tertiary-200 hover:border-tertiary-200 border-b-4  ${
                               currentPath === page.href
                                 ? "border-tertiary-100 text-tertiary-100"
                                 : "text-gray-50 border-transparent"
@@ -173,7 +173,7 @@ export default function Navigation() {
                       <span className=" text-tertiary-200 font-extrabold text-xl  leading-none">
                         FIRE
                       </span>
-                      <span className=" text-secondary-100 font-extrabold text-xl  leading-none">
+                      <span className=" text-white font-extrabold text-xl  leading-none">
                         DEPT.
                       </span>
                     </div>
