@@ -4,10 +4,14 @@ import {
   ArrowLeftCircleIcon,
   ArrowRightCircleIcon,
   ArrowRightIcon,
+  FireIcon,
+  LifebuoyIcon,
 } from "@heroicons/react/24/outline";
+import FormComponent from "../components/FormComponent";
 
 const Membership = () => {
   const [currentRequirement, setCurrentRequirement] = useState(0);
+
   const requirements = [
     "Firefighters must be 18 to 45 years of age to join. \nEMS personnel must be 18 to 50 years of age to join",
     "Applicant must be in good health and must pass a physical examination conducted by the department physician",
@@ -25,6 +29,8 @@ const Membership = () => {
     "Comradery: By harboring relationships with other members you not only gain friendships, you also gain a valuable professional network",
     "Incentives: Members get 24 hour access to our gym that has everything you need to get in shape. Members are also entitled to discounts across countless brands via ID.me",
   ];
+
+  const [showForm, setShowForm] = useState(false);
 
   const DisplayCard = ({ array, index, increment, decrement }) => {
     const disableNext = index === array.length - 1;
@@ -70,14 +76,17 @@ const Membership = () => {
         <span className="relative flex sm:w-2/3 w-11/12 justify-center border-8  py-6  font-bold">
           MEMBERSHIP
         </span>
-        <button className="transition-all duration-500 ease-in-out rounded-full bg-transparent ring-2 ring-accent-200 text-accent-200  relative -bottom-24 text-sm px-6 py-2 hover:text-black hover:bg-accent-200">
+        <button
+          onClick={() => setShowForm(true)}
+          className="transition-all duration-500 ease-in-out rounded-full bg-transparent ring-2 ring-accent-200 text-accent-200  relative -bottom-24 text-sm px-6 py-2 hover:text-black hover:bg-accent-200"
+        >
           APPLY HERE
         </button>
       </div>
       {/* Services section */}
       <div className="relative flex sm:flex-row flex-col w-full justify-between sm:gap-4 gap-8 py-8 sm:px-6 h-auto bg-black">
         <div className="bg-white flex flex-col w-full items-center justify-between sm:p-12 p-4">
-          {/* <FireIcon className="h-24 w-24" /> */}
+          <FireIcon className="h-24 w-24" />
           <div className="font-bold">ENGINE COMPANIES</div>
           <p className="text-center p-6">
             Their job is ultimately to extinguish the fire. The Engine Company
@@ -85,12 +94,16 @@ const Membership = () => {
             Aside from fire calls, Engine Companies also respond to auto
             accidents, fuel spills, wires downs, gas emergencies, and so on.
           </p>
-          <button className=" ring rounded-full ring-gray-900 px-8 py-2">
+          <button
+            onClick={() => setShowForm(true)}
+            className=" ring rounded-full ring-gray-900 px-8 py-2"
+          >
             JOIN
           </button>
         </div>
         <div className="bg-tertiary-300 flex flex-col w-full items-center justify-between sm:p-12 p-4 text-white">
-          {/* <FireIcon className="h-24 w-24" /> */}
+          <FireIcon className="h-24 w-24" />
+
           <div className="font-bold">LADDER COMPANY</div>
           <p className="text-center p-6">
             Their job at a fire is to search and rescue for any persons trapped;
@@ -101,19 +114,25 @@ const Membership = () => {
             well as wires down, Carbon Monoxide emergencies, Gas emergencies,
             and so on.
           </p>
-          <button className=" ring rounded-full ring-white px-8 py-2">
+          <button
+            onClick={() => setShowForm(true)}
+            className=" ring rounded-full ring-white px-8 py-2"
+          >
             JOIN
           </button>
         </div>
         <div className="bg-white text-black flex flex-col w-full items-center justify-between sm:p-12 p-4">
-          {/* <LifebuoyIcon className="h-24 w-24" /> */}
+          <LifebuoyIcon className="h-24 w-24" />
           <div className="font-bold">RESCUE COMPANY</div>
           <p className="text-center p-6">
             Their job is to treat and transport all patients to the hospital. In
             addition to medical emergencies, they will also respond to auto
             accidents and fires.
           </p>
-          <button className=" ring rounded-full ring-black px-8 py-2">
+          <button
+            onClick={() => setShowForm(true)}
+            className=" ring rounded-full ring-black px-8 py-2"
+          >
             JOIN
           </button>
         </div>
@@ -141,7 +160,7 @@ const Membership = () => {
       <div className="flex  my-4 sm:my-0 ">
         <div className="w-0 sm:w-1/2">
           <div className="flex-1 bg-white h-full">
-            <img src="/group_photo.jpg" className="h-full w-fit"/>
+            <img src="/group_photo.jpg" className="h-full w-fit" />
           </div>
         </div>
         <div className=" bg-tertiary-300 sm:w-1/2 px-6 flex flex-col items-center">
@@ -160,6 +179,7 @@ const Membership = () => {
           </div>
         </div>
       </div>
+      {showForm && <FormComponent show={showForm} setShow={setShowForm} />}
     </div>
   );
 };

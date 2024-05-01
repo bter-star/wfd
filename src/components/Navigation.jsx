@@ -17,7 +17,7 @@ const navigation = {
     { name: "Membership", href: "/membership" },
     { name: "Gallery", href: "/gallery" },
     { name: "History", href: "/history" },
-    { name: "Fire Safety", href: "/safety" },
+    // { name: "Fire Safety", href: "/safety" },
   ],
 };
 

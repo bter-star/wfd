@@ -9,7 +9,7 @@ import About from "./pages/About";
 import Navigation from "./components/Navigation";
 import PageContainer from "./components/PageContainer";
 import Footer from "./components/Footer";
-import Gallery from "./pages/Gallery";
+import Media from "./pages/Gallery"
 import History from "./pages/History";
 // import History from "./pages/History";
 // import FireSafety from "./pages/FireSafety";
@@ -28,7 +28,7 @@ function App() {
           />
           <Route
             path="/gallery"
-            element={<PageContainer content={<Gallery />} />}
+            element={<PageContainer content={<Media />} />}
           />
           <Route
             path="/history"
