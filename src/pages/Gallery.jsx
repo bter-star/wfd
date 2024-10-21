@@ -2,36 +2,47 @@ import { useState } from "react";
 import { Gallery } from "react-grid-gallery";
 import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
+import TitleSection from "../components/TitleSection";
 
 const images = [
   {
-    src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
-    width: 800,
-    height: 800,
+    src: "/353Patch.jpeg",
+    width: 1200,
+    height: 1200,
     alt: "Boats (Jeshu John - designerspics.com)",
   },
   {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    src: "/354Patch.jpeg",
     width: 800,
     height: 800,
   },
   {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    src: "/355Patch.jpeg",
+    width: 900,
+    height: 900,
+  },
+  {
+    src: "/352Patch.jpeg",
+    width: 900,
+    height: 900,
+  },
+  {
+    src: "/355Patch.jpeg",
+    width: 600,
+    height: 600,
+  },
+  {
+    src: "/353Patch.jpeg",
     width: 800,
     height: 800,
   },
   {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    src: "/353Patch.jpeg",
     width: 800,
     height: 800,
   },
   {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
-    width: 800,
-    height: 800,
-  },
-  {
-    src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+    src: "/353Patch.jpeg",
     width: 800,
     height: 800,
   },
@@ -49,24 +60,22 @@ const Media = () => {
   const handleClick = (index, item) => setIndex(index);
 
   return (
-    <div>
-      <div className="min-h-screen text-white flex items-center justify-center text-3xl sm:text-6xl ">
-        <span className="relative flex sm:w-2/3 w-11/12 justify-center border-8  py-6  font-bold">
-          Media
-        </span>
+    <>
+      <TitleSection asset={"/group_photo.jpg"} title="GALLERY" />
+      <div className="m-8">
+        <Gallery
+          images={images}
+          onClick={handleClick}
+          enableImageSelection={false}
+        />
+        <Lightbox
+          slides={slides}
+          open={index >= 0}
+          index={index}
+          close={() => setIndex(-1)}
+        />
       </div>
-      <Gallery
-        images={images}
-        onClick={handleClick}
-        enableImageSelection={false}
-      />
-      <Lightbox
-        slides={slides}
-        open={index >= 0}
-        index={index}
-        close={() => setIndex(-1)}
-      />
-    </div>
+    </>
   );
 };
 

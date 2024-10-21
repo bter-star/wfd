@@ -1,14 +1,10 @@
 import { Fragment, useState } from "react";
-import { Dialog, Popover, Tab, Transition } from "@headlessui/react";
+import { Dialog, Popover, Transition } from "@headlessui/react";
 import {
   Bars3Icon,
-  MagnifyingGlassIcon,
-  ShoppingCartIcon,
-  UserIcon,
   XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { ChevronDownIcon } from "@heroicons/react/20/solid";
-import { Link, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
 const navigation = {
   pages: [
@@ -16,7 +12,7 @@ const navigation = {
     { name: "About Us", href: "/about" },
     { name: "Membership", href: "/membership" },
     { name: "Gallery", href: "/gallery" },
-    { name: "History", href: "/history" },
+    { name: "Donate", href: "/donate" },
     // { name: "Fire Safety", href: "/safety" },
   ],
 };
@@ -31,7 +27,7 @@ export default function Navigation() {
   const currentPath = location.pathname;
 
   return (
-    <div className="bg-black opacity-95 sticky top-0 z-40">
+    <div className="bg-black-100 opacity-95 sticky top-0 z-40">
       {/* Mobile menu */}
       <Transition.Root show={open} as={Fragment}>
         <Dialog as="div" className="relative z-40 lg:hidden" onClose={setOpen}>
@@ -73,7 +69,7 @@ export default function Navigation() {
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a
-                        href={page.href}
+                        to={page.href}
                         className="-m-2 block p-2 font-medium text-gray-200"
                       >
                         {page.name}
@@ -142,9 +138,9 @@ export default function Navigation() {
                     <Popover.Group className="ml-8">
                       <div className="flex h-full justify-center space-x-8">
                         {navigation.pages.map((page) => (
-                          <Link
+                          <a
                             key={page.name}
-                            to={page.href}
+                            href={page.href}
                             className={`flex items-center text-md font-medium  hover:text-tertiary-200 hover:border-tertiary-200 border-b-4  ${
                               currentPath === page.href
                                 ? "border-tertiary-100 text-tertiary-100"
@@ -152,7 +148,7 @@ export default function Navigation() {
                             }`}
                           >
                             {page.name}
-                          </Link>
+                          </a>
                         ))}
                       </div>
                     </Popover.Group>
