@@ -96,12 +96,12 @@ export default function Footer() {
               ))}
             </div>
           </div>
-          <div className="mt-16 grid grid-cols-3 gap-10 xl:col-span-3 xl:mt-0">
+          <div className="mt-16 grid sm:grid-cols-3 gap-10 xl:col-span-3 xl:mt-0">
             <div className="">
               <h3 className="text-sm font-semibold leading-6 text-white">
                 Contact
               </h3>
-              <ul role="list" className="mt-6 space-y-4">
+              <ul  className="mt-6 space-y-4">
                 {navigation.contact.map((item) => (
                   <li className="grid grid-cols-2 text-sm " key={item.name}>
                     <p className="flex gap-2 text-gray-300">
@@ -127,7 +127,7 @@ export default function Footer() {
               <h3 className="text-sm font-semibold leading-6 text-white">
                 Pages
               </h3>
-              <ul role="list" className="mt-6 space-y-4 mx-auto">
+              <ul  className="mt-6 space-y-4 mx-auto">
                 {navigation.pages.map((item) => (
                   <li key={item.name}>
                     <a

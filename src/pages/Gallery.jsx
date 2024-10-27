@@ -57,7 +57,7 @@ const slides = images.map(({ src, width = 320, height }) => ({
 const Media = () => {
   const [index, setIndex] = useState(-1);
 
-  const handleClick = (index, item) => setIndex(index);
+  const handleClick = (index) => setIndex(index);
 
   return (
     <>

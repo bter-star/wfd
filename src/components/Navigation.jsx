@@ -13,13 +13,8 @@ const navigation = {
     { name: "Membership", href: "/membership" },
     { name: "Gallery", href: "/gallery" },
     { name: "Donate", href: "/donate" },
-    // { name: "Fire Safety", href: "/safety" },
   ],
 };
-
-function classNames(...classes) {
-  return classes.filter(Boolean).join(" ");
-}
 
 export default function Navigation() {
   const location = useLocation();
@@ -69,7 +64,7 @@ export default function Navigation() {
                   {navigation.pages.map((page) => (
                     <div key={page.name} className="flow-root">
                       <a
-                        to={page.href}
+                        href={page.href}
                         className="-m-2 block p-2 font-medium text-gray-200"
                       >
                         {page.name}

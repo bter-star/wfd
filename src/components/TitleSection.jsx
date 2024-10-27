@@ -1,14 +1,13 @@
 import Button from "./Button";
 
 const TitleSection = ({ children, asset, title, button }) => {
-  const assetType = asset.split(".").pop();
+  // const assetType = asset.split(".").pop();
 
   return (
     <div
-      className="flex flex-col bg-fixed h-screen px-8 object-cover bg-center bg-no-repeat bg-cover overflow-x-hidden"
+      className="flex flex-col bg-fixed h-screen px-8 object-center bg-center bg-no-repeat bg-cover overflow-x-hidden"
       style={{
         backgroundImage: `url(${asset})`,
-        backgroundPositionY: "center",
       }}
     >
       <div className="flex flex-col gap-8 relative top-1/3 justify-center items-center w-full">

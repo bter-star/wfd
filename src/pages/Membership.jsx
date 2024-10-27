@@ -1,12 +1,16 @@
 import React, { useRef } from "react";
 import {
   AcademicCapIcon,
-  ArrowRightIcon,
+  ArrowTrendingUpIcon,
+  BanknotesIcon,
   CalendarDaysIcon,
-  FireIcon,
-  LifebuoyIcon,
-  MapIcon,
+  CheckBadgeIcon,
+  FingerPrintIcon,
+  GlobeAmericasIcon,
+  IdentificationIcon,
+  TrophyIcon,
   UserGroupIcon,
+
 } from "@heroicons/react/24/outline";
 import TitleSection from "../components/TitleSection";
 import ApplicationForm from "../components/ApplicationForm";
@@ -17,17 +21,17 @@ const Membership = () => {
     {
       title: "Age",
       text: "Firefighters must be 18 to 45 years of age to join. \nEMS personnel must be 18 to 50 years of age to join",
-      icon: UserGroupIcon,
+      icon: IdentificationIcon,
     },
     {
       title: "Health",
       text: "Applicant must be in good health and must pass a physical examination conducted by the department physician",
-      icon: LifebuoyIcon,
+      icon: CheckBadgeIcon,
     },
     {
       title: "Citizenship",
       text: "Applicants must be a US Citizen and must reside within the boundary of the Woodmere Fire District or surrounding areas",
-      icon: MapIcon,
+      icon: GlobeAmericasIcon,
     },
     {
       title: "Training",
@@ -37,7 +41,7 @@ const Membership = () => {
     {
       title: "Background Check",
       text: "Applicants must pass a full criminal background check for arson as mandated by New York State",
-      icon: ArrowRightIcon,
+      icon: FingerPrintIcon,
     },
     {
       title: "Attendance",
@@ -50,7 +54,7 @@ const Membership = () => {
     {
       title: "Personal Development",
       text: "Volunteering is an excellent way to not only help your local community but also develop essential life skills such as teamwork, leadership, and deication",
-      icon: FireIcon,
+      icon: ArrowTrendingUpIcon,
     },
     {
       title: "Training",
@@ -60,38 +64,19 @@ const Membership = () => {
     {
       title: "Financial Incentives",
       text: "Members are entitled to Length of Service Award Program (LOSAP) for each year of active service. Tax Breaks: Members are also entitled to a 10% property tax break",
-      icon: ArrowRightIcon,
+      icon: BanknotesIcon,
     },
     {
       title: "Comradery",
       text: "By harboring relationships with other members you not only gain friendships, you also gain a valuable professional network",
-      icon: ArrowRightIcon,
+      icon: UserGroupIcon,
     },
     {
       title: "Fitness",
       text: "Members get 24 hour access to our gym that has everything you need to get in shape. Members are also entitled to discounts across countless brands via ID.me",
-      icon: ArrowRightIcon,
+      icon: TrophyIcon,
     },
-    {
-      title: "Fitness",
-      text: "Members get 24 hour access to our gym that has everything you need to get in shape. Members are also entitled to discounts across countless brands via ID.me",
-      icon: ArrowRightIcon,
-    },
-    {
-      title: "Fitness",
-      text: "Members get 24 hour access to our gym that has everything you need to get in shape. Members are also entitled to discounts across countless brands via ID.me",
-      icon: ArrowRightIcon,
-    },
-    {
-      title: "Fitness",
-      text: "Members get 24 hour access to our gym that has everything you need to get in shape. Members are also entitled to discounts across countless brands via ID.me",
-      icon: ArrowRightIcon,
-    },
-    {
-      title: "Fitness",
-      text: "Members get 24 hour access to our gym that has everything you need to get in shape. Members are also entitled to discounts across countless brands via ID.me",
-      icon: ArrowRightIcon,
-    },
+   
   ];
   const applicationRef = useRef(null);
 
@@ -172,7 +157,7 @@ const Membership = () => {
             >
               <benefit.icon className="h-24 w-24" />
               <h3 className="text-xl my-4">{benefit.title}</h3>
-              <p className="text-sm">{benefit.text}</p>
+              <p className="text-sm text-center">{benefit.text}</p>
             </div>
           ))}
         </div>
@@ -190,7 +175,7 @@ const Membership = () => {
             >
               <requirement.icon className="h-24 w-24" />
               <h3 className="text-xl my-4">{requirement.title}</h3>
-              <p className="text-sm">{requirement.text}</p>
+              <p className="text-sm text-center">{requirement.text}</p>
             </div>
           ))}
         </div>
