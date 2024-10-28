@@ -11,12 +11,12 @@ const About = () => {
         {
           number: "359",
           statement: `Ambulance 359 is our primary response ambulance. Purchased in 2012, 359 is equipped with modern EMS equipment as well as a bariatric stretcher and ....`,
-          image: "/352Rig.jpg",
+          image: "/359Rig.jpg",
         },
         {
           number: "3591",
           statement: `Ambulance 3591 is our primary response ambulance. Purchased in 2012, 359 is equipped with modern EMS equipment as well as a bariatric stretcher and ....`,
-          image: "/354Rig.jpg",
+          image: "/3591Rig.jpg",
         },
       ],
     },
@@ -91,7 +91,7 @@ const About = () => {
 
       <div className="py-8">
         <ContentFrame
-          image={"/DepartmentPatch.jpeg"}
+          image={"/hq.jpg"}
           title={"MISSION STATEMENT"}
           text={`The Woodmere Fire Department is a volunteer fire department located
           in Woodmere, NY. We are dedicated to serving our community and

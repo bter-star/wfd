@@ -3,12 +3,15 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        oswald: ["Oswald", "sans-serif"],
+      },
       colors: {
-        black:{
+        black: {
           DEFAULT: "#121212",
           100: "#121212",
           200: "#1a1a1a",
-          300: "#201D1D"
+          300: "#201D1D",
         },
         secondary: {
           100: "#0d31a5",

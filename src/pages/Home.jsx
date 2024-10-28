@@ -71,16 +71,16 @@ const Home = () => {
 
   return (
     <div className="flex flex-col">
-      <TitleSection asset={"/group_photo.jpg"}>
+      <TitleSection asset={"/smoke.jpg"}>
         <div
           className={`relative sm:w-1/2 my-20 transition-all duration-700 transform ${
             isAnimated ? "translate-x-0" : "translate-x-1/2"
           }`}
         >
-          <h1 className="mt-4 flex flex-col w-full text-4xl sm:text-6xl font-extrabold text-white">
-            THE PRIDE
-            <span className="text-tertiary-200 leading-none">OF</span>
-            WOODMERE
+          <h1 className="mt-4 flex flex-col w-full text-4xl sm:text-6xl font-extrabold tracking-wider text-white">
+            SERVING OUR
+            <span className="text-tertiary-200 leading-none">COMMUNITY</span>
+            TOGETHER
           </h1>
           <p className="text-white text-2xl flex tracking-wider font-light pt-2">
             WOODMERE FIRE DEPARTMENT
@@ -123,7 +123,7 @@ const Home = () => {
 
       <div className="py-8 flex flex-col gap-y-4 bg-black relative">
         <ContentFrame
-          image={"/353Rig.jpg"}
+          image={"/group_photo.jpg"}
           title={"Fire"}
           text={`Firefighting is a crucial service provided by our department,
             dedicated to protecting lives, property, and the environment from
@@ -144,7 +144,7 @@ const Home = () => {
           reverse={true}
         />
         <ContentFrame
-          image={"/352Rig.jpg"}
+          image={"/goons.jpg"}
           title={"EMS"}
           text={` Emergency Medical Services (EMS) in the fire service play a
             critical and lifesaving role in our community. Our EMS personnel
@@ -170,7 +170,7 @@ const Home = () => {
               className="flex flex-col items-center justify-between bg-tertiary-200 rounded p-8 min-h-96 flex-1"
             >
               <page.icon className="h-24 w-24 text-white" />
-              <p className="text-white text-sm text-center p-4">{page.text}</p>
+              <p className="text-white text-center p-4">{page.text}</p>
               <Button
                 text={page.button.text}
                 styleString="primary"

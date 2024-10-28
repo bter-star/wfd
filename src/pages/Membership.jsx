@@ -90,7 +90,7 @@ const Membership = () => {
     <div className="flex flex-col w-full">
       {/* Video w/title */}
       <TitleSection
-        asset={"/group_photo.jpg"}
+        asset={"/roof_work.jpg"}
         title="MEMBERSHIP"
         button={{
           text: "Apply Here",
@@ -102,7 +102,7 @@ const Membership = () => {
       {/* Services Section */}
       <div className="my-8 flex flex-col gap-4">
         <ContentFrame
-          image={"/group_photo.jpg"}
+          image={"/group_photo2.jpg"}
           title={"ENGINE COMPANIES"}
           text={`Their job is ultimately to extinguish the fire. The Engine Company
           will connect to a hydrant, stretch hose line, and attack the fire.
@@ -116,7 +116,7 @@ const Membership = () => {
           }}
         />
         <ContentFrame
-          image={"/group_photo.jpg"}
+          image={"/ladderOperating.jpg"}
           title={"TRUCK COMPANY"}
           text={`Their job at a fire is to search and rescue for any persons trapped;
           confining the fire; forcing doors to assist the Engine in getting to
@@ -132,7 +132,7 @@ const Membership = () => {
           }}
         />
         <ContentFrame
-          image={"/group_photo.jpg"}
+          image={"/goonsWorking.jpg"}
           title={"RESCUE COMPANY"}
           text={` Their job is to treat and transport all patients to the hospital. In
           addition to medical emergencies, they will also respond to auto
@@ -186,7 +186,7 @@ const Membership = () => {
         ref={applicationRef}
         className="flex flex-col items-center justify-center mx-2"
       >
-        <h2 className="font-extrabold text-4xl text-white py-8">APPLICATION</h2>
+        <h2 className="font-extrabold text-4xl text-white py-8">PRE-APPLICATION</h2>
         <ApplicationForm />
       </div>
     </div>

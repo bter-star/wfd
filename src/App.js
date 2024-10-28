@@ -14,7 +14,7 @@ import Donate from "./pages/Donate";
 
 function App() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font-oswald">
       <Router>
         <Navigation />
         <Routes>

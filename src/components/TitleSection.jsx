@@ -12,7 +12,7 @@ const TitleSection = ({ children, asset, title, button }) => {
     >
       <div className="flex flex-col gap-8 relative top-1/3 justify-center items-center w-full">
         {title && (
-          <span className="h-fit m-auto border-8 w-full text-center py-6 text-white text-3xl sm:text-6xl font-bold">
+          <span className="h-fit m-auto border-8 bg-black-100/20 w-full text-center  py-6 text-white text-3xl sm:text-6xl font-bold">
             {title}
           </span>
         )}

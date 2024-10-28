@@ -10,7 +10,7 @@ const ContentFrame = ({ image, text, title, button, reverse = false }) => {
     >
       <div className="flex flex-col gap-4 w-full sm:w-1/2 py-4 sm:px-4">
         <h2 className="text-3xl font-extrabold text-white">{title}</h2>
-        <p className="text-white text-sm">{text}</p>
+        <p className="text-gray-300 tracking-wide">{text}</p>
         {button && (
           <Button
             text={button.text}
