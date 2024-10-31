@@ -53,6 +53,16 @@ const ApplicationForm = () => {
         </div>
         <div className="col-span-full">
           <Input
+          type={"textarea"}
+            name={"prior-care-experience"}
+            label={
+              "If you answered yes to the above, briefly explain any prior experience you have providing care on an ambulance?"
+            }
+          />
+        </div>
+
+        <div className="col-span-full">
+          <Input
             type={"radio"}
             name={"references"}
             label={"Do you know any members of the Woodmere Fire Department?"}

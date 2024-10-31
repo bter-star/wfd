@@ -67,7 +67,7 @@ const About = () => {
   function CompanyCard({ company, section }) {
     return (
       <div className="grid grid-cols-2">
-        <div className="mx-auto   group overflow-hidden rounded-sm shadow-lg cursor-pointer transform transition-all duration-500 hover:scale-105">
+        <div className="mx-auto group overflow-hidden rounded-sm shadow-lg cursor-pointer transform transition-all duration-500 hover:scale-105">
           <img
             src={company.image}
             alt={`Company ${company.number}`}
@@ -87,7 +87,7 @@ const About = () => {
   return (
     <div>
       {/* Video w/title */}
-      <TitleSection asset={"/group_photo.jpg"} title="About Us" />
+      <TitleSection asset={"/oldschool.jpg"} title="About Us" />
 
       <div className="py-8">
         <ContentFrame

@@ -1,9 +1,6 @@
 import { Fragment, useState } from "react";
 import { Dialog, Popover, Transition } from "@headlessui/react";
-import {
-  Bars3Icon,
-  XMarkIcon,
-} from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useLocation } from "react-router-dom";
 
 const navigation = {
@@ -74,18 +71,11 @@ export default function Navigation() {
                 </div>
 
                 <div className="space-y-6 border-t border-gray-200 px-4 py-6">
+                  
                   <div className="flow-root">
                     <a
-                      href="#"
-                      className="-m-2 block p-2 font-medium text-gray-900"
-                    >
-                      Join
-                    </a>
-                  </div>
-                  <div className="flow-root">
-                    <a
-                      href="#"
-                      className="-m-2 block p-2 font-medium text-gray-900"
+                      href="https://www.paypal.com/donate/?hosted_button_id=564FAUZ6BP3UA"
+                      className="-m-2 block p-2 font-medium text-white"
                     >
                       Donate
                     </a>

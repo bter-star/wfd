@@ -90,7 +90,7 @@ const Membership = () => {
     <div className="flex flex-col w-full">
       {/* Video w/title */}
       <TitleSection
-        asset={"/roof_work.jpg"}
+        asset={"/group_photo4.jpg"}
         title="MEMBERSHIP"
         button={{
           text: "Apply Here",
