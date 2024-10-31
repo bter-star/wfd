@@ -6,45 +6,24 @@ import TitleSection from "../components/TitleSection";
 
 const images = [
   {
-    src: "/353Patch.jpeg",
-    width: 1200,
-    height: 1200,
+    src: "/rufftimes.jpg",
     alt: "Boats (Jeshu John - designerspics.com)",
   },
   {
-    src: "/354Patch.jpeg",
-    width: 800,
-    height: 800,
+    src: "/group_photo.jpg",
+    alt: "Flower (Fancycrave - fancycrave.com)",
   },
   {
-    src: "/355Patch.jpeg",
-    width: 900,
-    height: 900,
+    src: "/outreach.jpg",
+    alt: "Flower (Fancycrave - fancycrave.com)",
   },
   {
-    src: "/352Patch.jpeg",
-    width: 900,
-    height: 900,
+    src: "/hq.jpg",
+    alt: "Flower (Fancycrave - fancycrave.com)",
   },
   {
-    src: "/355Patch.jpeg",
-    width: 600,
-    height: 600,
-  },
-  {
-    src: "/353Patch.jpeg",
-    width: 800,
-    height: 800,
-  },
-  {
-    src: "/353Patch.jpeg",
-    width: 800,
-    height: 800,
-  },
-  {
-    src: "/353Patch.jpeg",
-    width: 800,
-    height: 800,
+    src: "/oldschool.jpg",
+    alt: "Flower (Fancycrave - fancycrave.com)",
   },
 ];
 
@@ -62,7 +41,7 @@ const Media = () => {
   return (
     <>
       <TitleSection asset={"/group_photo.jpg"} title="GALLERY" />
-      <div className="m-8">
+      <div className="m-8 max-w-7xl w-full xl:mx-auto">
         <Gallery
           images={images}
           onClick={handleClick}

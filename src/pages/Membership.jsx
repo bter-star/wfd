@@ -184,7 +184,7 @@ const Membership = () => {
       {/* Application */}
       <div
         ref={applicationRef}
-        className="flex flex-col items-center justify-center mx-2"
+        className="flex flex-col items-center justify-center mx-6"
       >
         <h2 className="font-extrabold text-4xl text-white py-8">PRE-APPLICATION</h2>
         <ApplicationForm />

@@ -105,7 +105,7 @@ const About = () => {
       <h2 className="text-white text-center text-4xl py-6">OUR COMPANIES</h2>
       {companyData.map((category) => {
         return (
-          <div className="relative space-y-2 flex flex-col  w-full justify-between sm:px-10 bg-black">
+          <div className="relative space-y-2 flex flex-col max-w-7xl w-full xl:mx-auto justify-between sm:px-10 bg-black">
             <div className="flex flex-col gap-4 p-4 ">
               {category.companies.map((company) => (
                 <CompanyCard company={company} section={category.section} />

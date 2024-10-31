@@ -91,8 +91,8 @@ export default function Navigation() {
       <header className="relative">
         <nav aria-label="Top">
           {/* Navigation */}
-          <div className="bg-transparent ">
-            <div className="px-4 sm:px-6 lg:px-8 border-b border-gray-800">
+          <div className="bg-transparent max-w-7xl mx-auto">
+            <div className="px-4 sm:px-6 lg:px-8  border-b border-gray-800">
               <div className="">
                 <div className="flex h-24 items-center justify-between w-full">
                   {/* Logo (lg+) */}

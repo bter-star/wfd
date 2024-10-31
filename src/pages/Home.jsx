@@ -73,7 +73,7 @@ const Home = () => {
     <div className="flex flex-col">
       <TitleSection asset={"/smoke.jpg"}>
         <div
-          className={`relative sm:w-1/2 my-20 transition-all duration-700 transform ${
+          className={`relative sm:w-1/2  my-20 transition-all duration-700 transform ${
             isAnimated ? "translate-x-0" : "translate-x-1/2"
           }`}
         >
@@ -107,7 +107,7 @@ const Home = () => {
       </TitleSection>
 
       {/* Key Points Section*/}
-      <div className="mt-10 mx-6 sm:mx-8 flex flex-col sm:flex-row justify-evenly gap-6 bg-black opacity-80 border-white border rounded-sm p-6 transition-all duration-500 ease-in-out hover:bg-secondary-500">
+      <div className="mt-10 mx-6 sm:mx-8 max-w-7xl w-full xl:mx-auto flex flex-col sm:flex-row justify-evenly gap-6 bg-black opacity-80 border-white border rounded-sm p-6 transition-all duration-500 ease-in-out hover:bg-secondary-500">
         {keyPoints.map((point) => (
           <div className="text-white font-extrabold flex flex-col gap-4">
             <div className="flex items-center text-lg">
@@ -121,7 +121,7 @@ const Home = () => {
         ))}
       </div>
 
-      <div className="py-8 flex flex-col gap-y-4 bg-black relative">
+      <div className="py-8 flex flex-col gap-y-4  bg-black relative">
         <ContentFrame
           image={"/group_photo.jpg"}
           title={"Fire"}
@@ -163,7 +163,7 @@ const Home = () => {
           }}
           reverse={false}
         />
-        <div className="relative bg-black flex flex-col md:flex-row items-center justify-evenly p-4 gap-8">
+        <div className="relative max-w-7xl w-full xl:mx-auto bg-black flex flex-col md:flex-row items-center justify-evenly p-4 gap-8">
           {pages.map((page) => (
             <div
               key={page.name}

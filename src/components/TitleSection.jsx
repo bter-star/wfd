@@ -8,7 +8,9 @@ const TitleSection = ({ children, asset, title, subtitle, button }) => {
   useEffect(() => {
     const handleScroll = () => {
       if (imageRef.current) {
-        imageRef.current.style.transform = `translateY(${window.scrollY * 0.5}px)`;
+        imageRef.current.style.transform = `translateY(${
+          window.scrollY * 0.5
+        }px)`;
       }
     };
 
@@ -30,28 +32,30 @@ const TitleSection = ({ children, asset, title, subtitle, button }) => {
 
       {/* Content Container */}
       <div className="relative z-10 flex flex-col h-full bg-black/50 px-8">
-        <div className="flex flex-col gap-8 relative top-1/3 justify-center items-center w-full max-w-screen-sm mx-auto">
-          {title && (
-            <span className="h-fit m-auto border-8 bg-black/20 w-full text-center py-6 text-white text-3xl sm:text-6xl font-bold">
-              {title}
-            </span>
-          )}
-          {subtitle && (
-            <span className="h-fit m-auto text-white text-2xl md:w-1/2 flex text-center font-medium">
-              {subtitle}
-            </span>
-          )}
-          {button && (
-            <div>
-              <Button
-                text={button.text}
-                styleString={button.styleString}
-                onClick={button.onClick}
-              />
-            </div>
-          )}
+        <div className="max-w-7xl mx-auto w-full h-full">
+          <div className="flex flex-col gap-8 relative top-1/3 justify-center items-center w-full max-w-screen-sm mx-auto">
+            {title && (
+              <span className="h-fit m-auto border-8 bg-black/20 w-full text-center py-6 text-white text-3xl sm:text-6xl font-bold">
+                {title}
+              </span>
+            )}
+            {subtitle && (
+              <span className="h-fit m-auto text-white text-2xl md:w-1/2 flex text-center">
+                {subtitle}
+              </span>
+            )}
+            {button && (
+              <div>
+                <Button
+                  text={button.text}
+                  styleString={button.styleString}
+                  onClick={button.onClick}
+                />
+              </div>
+            )}
+          </div>
+          {children}
         </div>
-        {children}
       </div>
     </div>
   );
