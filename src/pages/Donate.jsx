@@ -11,7 +11,7 @@ const Donate = () => {
         text: "Donate",
         onClick: () =>
           window.open(
-            "https://www.paypal.com/donate/?hosted_button_id=564FAUZ6BP3UA",
+            "https://www.paypal.com/donate?token=RMferbaC30HA_M1c9ab_fEGfc1lgTrvxepjr2WfSvSHXJCk13r0AqPqBxeXpZkguYUJ0mngyvs8XLGX_",
             "_blank"
           ),
           styleString: "accent",

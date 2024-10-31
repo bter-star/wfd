@@ -74,7 +74,7 @@ export default function Navigation() {
                   
                   <div className="flow-root">
                     <a
-                      href="https://www.paypal.com/donate/?hosted_button_id=564FAUZ6BP3UA"
+                      href="https://www.paypal.com/donate?token=RMferbaC30HA_M1c9ab_fEGfc1lgTrvxepjr2WfSvSHXJCk13r0AqPqBxeXpZkguYUJ0mngyvs8XLGX_"
                       className="-m-2 block p-2 font-medium text-white"
                     >
                       Donate
